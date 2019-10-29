@@ -55,5 +55,5 @@ for(i in 1:nrow(dat)){
   mat_rec<-cbind(c(case_count_rec, (args$casesize-case_count_rec)), c(control_count_rec, (args$controlsize-control_count_rec)))
   dat[i,]$P_REC<-fisher.test(mat_rec, alternative="greater")$p.value
 }
-
+dat <- dat[order(dat$P_DOM),]
 write.table(x=dat,file=args$outfile, sep="\t", quote=F, row.names=F, col.names=T)

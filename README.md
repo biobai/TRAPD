@@ -1,5 +1,6 @@
 # TRAPD
 
+Forked from https://github.com/mhguo1/TRAPD.git 
 
 Finding genes associated with Mendelian disorders can often be challenging. While some disorders are amenable gene discovery using family-based analyses (e.g., linkage or segregation), other disorders may be very challenging for a number of reasons (see Guo et al., AJHG. 2016. PMID: 27545677). One approach to identify genes associated with Mendelian disorders is to use burden testing, where the aggregate burden of rare protein-altering variants in each gene is tested against a set of suitable controls. While one may sequence a set of control samples or have control sample sequencing readily available, this is often too expensive and unavailable. Here, we provide a simple-to-use program called TRAPD (Testing Rare vAriants using Public Data) that allows for burden testing against publicly-available summary level data (e.g., ExAC or gnomAD).
 

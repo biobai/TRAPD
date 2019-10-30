@@ -287,7 +287,7 @@ def test_exclude_vep(filter, annot, csq_anno):
 			else:
 				return 1
         else:
-                return 0
+                return 1
 	
 		
 
@@ -419,7 +419,8 @@ vcffile.close()
 #Write Output
 outfile=open(options.outfilename, "w")
 outfile.write("#GENE\tSNPS\n")
-for x in snptable:
+snptable_sorted=sorted(snptable.keys())
+for x in snptable_sorted:
 	if len(x)>0:
         #Read through hash table and print out variants
         	snp_out=','.join(snptable[x][1])

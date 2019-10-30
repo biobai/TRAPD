@@ -384,9 +384,9 @@ for line_vcf1 in vcffile:
 								iter=iter+1
 						if options.excludevep is not None:
 							iter=0
-							while keep_a[i]==1 and iter<len(options.includevep):
-								filter=options.includevep[iter]
-								keep_a[i]=test_include_vep(filter, annots[i], csq_anno)
+							while keep_a[i]==1 and iter<len(options.excludevep):
+								filter=options.excludevep[iter]
+								keep_a[i]=test_exclude_vep(filter, annots[i], csq_anno)
 								iter=iter+1
 					else:
 						keep_a[i]=0
